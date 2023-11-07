@@ -1,12 +1,12 @@
 @use 'variaveis';
     
 :root {
-    --nav-color: white;
+    --nav-color: variaveis.$corButons;
     --nav-background-color: variaveis.$corPrincipal;
   }
   
   body {
-    background: #070707;
+    background: variaveis.$corPrincipal;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +14,7 @@
   }
   
   canvas {
-    box-shadow: 2px 1px 10px green;
+    box-shadow: 2px 1px 10px variaveis.$corSecundaria;
     max-width: 600px;
     width: 100%;
     cursor: pointer;
@@ -29,8 +29,8 @@
   input[type=range]::-moz-range-thumb{
     height: 16px;
     width: 16px;
-    box-shadow: 3px 3px 3px green;
-    border: 1px solid green;
+    box-shadow: 3px 3px 3px variaveis.$corSecundaria;
+    border: 1px solid variaveis.$corSecundaria;
     border-radius: 30px;
     background: #191919;
     cursor: pointer;
@@ -48,7 +48,7 @@
   }
   
   ::selection {
-    background: green;
+    background: variaveis.$corSecundaria;
     color: black;
   }
   
@@ -57,14 +57,14 @@
     padding: 10px;
     margin: 10px;
     border: 1px solid #0f0;
-    box-shadow: 2px 1px 10px green;
+    box-shadow: 2px 1px 10px variaveis.$corSecundaria;
     box-sizing: border-box;
     width: 200px;
   
     font-family: 'consolas';
   
-    background: green;
-    color: white;
+    background: variaveis.$corSecundaria;
+    color: variaveis.$corButons;
   
     cursor: pointer;
     transition: .25s;
@@ -75,11 +75,11 @@
   }
   
   #speed, #lineHeight {
-    color: white;
+    color: variaveis.$corButons;
   }
   
   #speed span, #lineHeight span {
-    color: green;
+    color: variaveis.$corSecundaria;
   }
   
   .range__group {
