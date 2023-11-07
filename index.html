@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matrix Effect - Exercicio Gulp</title>
+
+  <link rel="stylesheet" href="./build/styles/main.css" />
+</head>
+
+<body>
+
+  <canvas onclick="control(this)" width="600" height="300"></canvas>
+
+  <div class="range__group">
+    <input type="range" id="speedRange" value=60 step="10" min="10" max="100" />
+    <p id="speed">Velocidade: <span>60</span></p>
+  </div>
+
+  <div class="range__group">
+    <input type="range" id="lineRange" value=3 min="1" step="1" max="10" />
+    <p id="lineHeight">Espaço letras: <span>3</span></p>
+  </div>
+
+  <script src="./build/scripts/script.js"></script>
+</body>
+
+</html>
